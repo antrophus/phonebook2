@@ -11,13 +11,24 @@ public class PersonVo {
 	// 셍성자
 	public PersonVo() {
 	}
+	
+	public PersonVo(int personId) {
+		this.personId = personId;
+	}
 
+	public PersonVo(String name, String hp, String company) {
+		this.name = name;
+		this.hp = hp;
+		this.company = company;
+	}
+	
 	public PersonVo(int personId, String name, String hp, String company) {
 		this.personId = personId;
 		this.name = name;
 		this.hp = hp;
 		this.company = company;
 	}
+
 
 	// 메소드 -gs
 	public int getPersonId() {

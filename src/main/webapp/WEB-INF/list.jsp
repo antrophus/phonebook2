@@ -36,14 +36,14 @@
 				<td><%=personList.get(i).getCompany()%></td>
 			</tr>
 			<tr>
-				<th>[수정폼으로 이동]</th>
-				<td>[삭제]</td>
+				<th><a href="/phonebook2/pbc?action=editform&no=<%=personList.get(i).getPersonId() %>">[수정폼으로 이동]</a></th>
+				<td><a href="/phonebook2/pbc?action=delete&no=<%=personList.get(i).getPersonId() %>">[삭제]</a></td>
 			</tr>
 		</tbody>
 	</table>
 	<br>
 	<%} %>
 	<br>
-	<a href="">리스트로 가기</a>
+	<a href="/phonebook2/pbc?action=writeform">등록폼으로 이동</a>
 </body>
 </html>
