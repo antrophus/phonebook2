@@ -136,6 +136,8 @@ public class PhonebookController extends HttpServlet {
 			// 리다이렉트
 			response.sendRedirect("/phonebook2/pbc?action=list");
 
+		}else {
+			System.out.println("action 없음");
 		}
 	}
 
